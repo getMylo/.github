@@ -1,0 +1,11 @@
+{
+    "name": "Build and Publish to DockerHub and Artifactory",
+    "description": "Build and Publish to a repository with the same name in mogo's dockerhub, and also pull image into the artifactory cache.",
+    "iconName": "mogo-logo",
+    "categories": [
+        "Docker"
+    ],
+    "filePatterns": [
+        "^Dockerfile"
+    ]
+}
