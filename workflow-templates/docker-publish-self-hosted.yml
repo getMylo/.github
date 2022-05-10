@@ -7,11 +7,11 @@ name: Docker-Build-And-Publish-Self-Hosted
 
 on:
   push:
-    branches: [ main, dev, develop, main, master, staging, qa, demo, training ]
+    branches: [ $default-branch, dev, develop, main, master, staging, qa, demo, training ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*', 'qa-**', 'release-**', 'hotfix-**', 'dev-**', 'demo-**', 'training-**', 'staging-**' ]
   pull_request:
-    branches: [ main ]
+    branches: [ $default-branch ]
 
 env:
   # Use docker.io for Docker Hub if empty
